@@ -1,0 +1,31 @@
+{
+  "name": "qBitController",
+  "subtitle": "AltStore source for qBitController",
+  "website": "https://github.com/Bartuzen/qBitController",
+  "apps": [
+    {
+      "name": "qBitController",
+      "bundleIdentifier": "dev.bartuzen.qbitcontroller",
+      "developerName": "Bartuzen",
+      "subtitle": "Control qBittorrent from any device",
+      "localizedDescription": "Free and open-source application for controlling qBittorrent on your servers.\n\nFeatures:\n- Manage multiple qBittorrent servers\n- Add torrents using magnet links or files\n- See detailed information about torrents\n- Perform various actions on torrents such as pausing, resuming, deleting, and more\n- Sort torrents by their name, size, progress, download/upload speed, and more\n- Filter torrents by their state, category, tag, and tracker\n- Manage categories and tags\n- View RSS feeds, create auto download rules\n- Search torrents online",
+      "iconURL": "https://raw.githubusercontent.com/Bartuzen/qBitController/refs/heads/master/iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/app-icon-1024.png",
+      "tintColor": "#5389C7",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "2.0.0",
+          "buildVersion": "22",
+          "date": "2025-07-07T13:32Z",
+          "localizedDescription": "- Initial release for iOS",
+          "downloadURL": "https://github.com/Bartuzen/qBitController/releases/download/v2.0.0/qbitcontroller-2.0.0-ios.ipa",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": []
+      }
+    }
+  ]
+}
