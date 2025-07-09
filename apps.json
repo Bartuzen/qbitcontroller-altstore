@@ -19,7 +19,8 @@
           "date": "2025-07-07T13:32Z",
           "localizedDescription": "- Initial release for iOS",
           "downloadURL": "https://github.com/Bartuzen/qBitController/releases/download/v2.0.0/qbitcontroller-2.0.0-ios.ipa",
-          "minOSVersion": "14.0"
+          "minOSVersion": "14.0",
+          "size": 19653292
         }
       ],
       "appPermissions": {
