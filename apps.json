@@ -14,6 +14,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "2.0.1",
+          "buildVersion": "23",
+          "date": "2025-07-11T09:55Z",
+          "localizedDescription": "- Bug fixes",
+          "downloadURL": "https://github.com/Bartuzen/qBitController/releases/download/v2.0.1/qbitcontroller-2.0.1-ios.ipa",
+          "minOSVersion": "14.0",
+          "size": 19688524
+        },
+        {
           "version": "2.0.0",
           "buildVersion": "22",
           "date": "2025-07-07T13:32Z",
