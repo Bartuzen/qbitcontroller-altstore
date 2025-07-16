@@ -1,29 +1,9 @@
 name: Update AltStore Source
+run-name: Version ${{ github.event.client_payload.version }}
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: "Version"
-        required: true
-      buildVersion:
-        description: "Version code"
-        required: true
-      date:
-        description: "Release date"
-        required: true
-      localizedDescription:
-        description: "Description"
-        required: true
-      downloadURL:
-        description: "Download URL"
-        required: true
-      minOSVersion:
-        description: "Minimum iOS version"
-        required: true
-      size:
-        description: "IPA file size in bytes"
-        required: true
+  repository_dispatch:
+    types: [ update-altstore ]
 
 permissions:
   contents: write
@@ -44,20 +24,20 @@ jobs:
         run: |
           python update_source.py \
             --file apps.json \
-            --version ${{ github.event.inputs.version }} \
-            --buildVersion ${{ github.event.inputs.buildVersion }} \
-            --date ${{ github.event.inputs.date }} \
-            --localizedDescription "${{ github.event.inputs.localizedDescription }}" \
-            --downloadURL ${{ github.event.inputs.downloadURL }} \
-            --minOSVersion ${{ github.event.inputs.minOSVersion }} \
-            --size ${{ github.event.inputs.size }}
+            --version ${{ github.event.client_payload.version }} \
+            --buildVersion ${{ github.event.client_payload.buildVersion }} \
+            --date ${{ github.event.client_payload.date }} \
+            --localizedDescription "${{ github.event.client_payload.localizedDescription }}" \
+            --downloadURL ${{ github.event.client_payload.downloadURL }} \
+            --minOSVersion ${{ github.event.client_payload.minOSVersion }} \
+            --size ${{ github.event.client_payload.size }}
 
       - name: Commit and push changes
         run: |
           git config user.name "actions-user"
           git config user.email "actions-user@users.noreply.github.com"
           git add apps.json
-          git commit -m "Version ${{ github.event.inputs.version }}"
+          git commit -m "Version ${{ github.event.client_payload.version }}"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
