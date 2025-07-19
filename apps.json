@@ -14,6 +14,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "2.0.4",
+          "buildVersion": "26",
+          "date": "2025-07-19T09:41:56Z",
+          "localizedDescription": "- Added option to change app color\n- Bug fixes",
+          "downloadURL": "https://github.com/Bartuzen/qBitController/releases/download/v2.0.4/qbitcontroller-2.0.4-ios.ipa",
+          "minOSVersion": "14.0",
+          "size": 19984729
+        },
+        {
           "version": "2.0.3",
           "buildVersion": "25",
           "date": "2025-07-17T20:42:04Z",
