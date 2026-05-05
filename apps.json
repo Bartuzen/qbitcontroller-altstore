@@ -14,6 +14,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "2.2.0",
+          "buildVersion": "28",
+          "date": "2026-05-05T14:55:32Z",
+          "localizedDescription": "- Added support for qBittorrent 5.2.0\n- Added option to hide server URLs in the sidebar\n- Added option to show downloaded and uploaded amount in torrent list\n- Made download and upload speeds texts different colors to be easier to distinguish\n- Added option to sort by downloaded and uploaded size\n- Added existing folders as suggestions for download path when adding a torrent\n- Bug fixes",
+          "downloadURL": "https://github.com/Bartuzen/qBitController/releases/download/v2.2.0/qbitcontroller-2.2.0-ios.ipa",
+          "minOSVersion": "14.0",
+          "size": 18204383
+        },
+        {
           "version": "2.1.0",
           "buildVersion": "27",
           "date": "2025-09-01T14:44:00Z",
